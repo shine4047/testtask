@@ -12,7 +12,7 @@ public class FSFolder extends FSEntry {
     private List<FSEntry> content;
     public FSFolder(String name, List<FSEntry> content) {
         super(name);
-        this.content = content;
+        this.content = new ArrayList<FSEntry>(content);
     }
 
     public FSFolder(String name) {
